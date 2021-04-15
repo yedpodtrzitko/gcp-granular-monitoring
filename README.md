@@ -13,7 +13,7 @@ Note: this code is ripped out of an older project as-is, so it contains hardcode
 
 
 ## Example
-
+```
 # send value for metric which should be accumulated as sum of all values. 
 mark_point("summed_metric", 5, result="SUM")
 mark_point("summed_metric", 10, result="SUM")
@@ -29,3 +29,4 @@ send_metrics()
 # custom.googleapis.com/summed_metric_SUM - 15
 # custom.googleapis.com/averaged_metric_AVG - 30
 # custom.googleapis.com/averaged_metric_COUNT - 2
+```
